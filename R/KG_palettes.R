@@ -10,5 +10,5 @@ KG_palettes <- list(
   'Hakodate_Mt' = c("#6c6c6a", "#542d1c", "#726129", "#8a5e37", "#d4b694"),
   'Akashiyaki' = c("#a71426", "#704207", "#c6b395", "#ab824c", "#660809"),
   'Sapporo_Sta' = c("#7f776c", "#88745b", "#c4beb2", "#3c4c6d", "#4875b6"),
-  'Otaru_Unga' = c("#7d5c53", "#54514a", "#466265", "#98a1a8", "#c3ced4"),
+  'Otaru_Unga' = c("#7d5c53", "#54514a", "#466265", "#98a1a8", "#c3ced4")
 )
