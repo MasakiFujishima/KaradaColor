@@ -44,5 +44,3 @@ Show_KG_Palette <- function(name, n = 5,
   return(pal_col(n))
 
 }
-
-hihi
