@@ -1,0 +1,6 @@
+^LICENSE\.md$
+^KaradaColor.Rproj
+^Pictuer
+^data-raw
+^.*\.Rproj$
+^\.Rproj\.user$

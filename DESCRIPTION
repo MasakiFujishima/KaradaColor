@@ -1,0 +1,17 @@
+Package: KaradaColor
+Type: Package
+Title: The colour palette of the Japanese landscape is good for the body
+Version: 0.0.0.9000
+Author: KARADA-GOOD
+Maintainer: KARADA-GOOD <info@karada-good.net>
+Description: The colour palette of the Japanese landscape is good for the body.
+License: GPL (>= 3)
+Encoding: UTF-8
+LazyData: true
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.2.1
+Depends:
+    R (>= 3.5.0)
+Imports: 
+    graphics,
+    grDevices
