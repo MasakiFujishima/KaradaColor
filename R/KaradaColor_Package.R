@@ -1,15 +1,3 @@
-#' @title Color palette dataset for the KaradaColor Package
-#' @description \code{df_KG_palettes} Displays the color palette dataset
-#' @return Vector containing a hex color code and palette name
-#' @usage df_KG_palettes
-#' @keywords data
-#' @name df_KG_palettes
-#' @docType data
-#' @examples
-#' data("df_KG_palettes")
-#' head(df_KG_palettes)
-"df_KG_palettes"
-
 #' @title Displays the color palette of the KaradaColor Package
 #' @description \code{Show_KG_Palette} Displays the color palette of the KaradaColor Package
 #' @importFrom grDevices colorRampPalette rgb
@@ -25,7 +13,7 @@
 Show_KG_Palette <- function(name, n = 5,
                             showPalette = TRUE) {
   #Check the color palette name
-  pal_name <- df_KG_palettes[[name]]
+  pal_name <- KG_palettes[[name]]
   #Displays the available color palette name if it is outside of the recorded name, and then exits
   if (is.null(pal_name)) {
     stop("Palette not found.\nCheck the color palette name with the 'ALL_KG_Palette' command.")

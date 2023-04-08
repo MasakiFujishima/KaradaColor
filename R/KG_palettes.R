@@ -1,0 +1,6 @@
+# List of palettes
+KG_palettes <- list(
+  'Haru_Sonsho-In' = c("#d3b5b3" "#fadfe6" "#f7d0a7" "#d2d972" "#495642"),
+  'Haru_Kyoto_Ine-cho' = c("#efffff" "#b8d3e8" "#214458" "#30424c" "#3b413f"),
+  'Amanohashidate' = c("#869ea2" "#74887f" "#435047" "#8fa6ae" "#98afb7")
+)
