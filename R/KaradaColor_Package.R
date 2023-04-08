@@ -10,6 +10,7 @@
 #' head(df_KG_palettes)
 "df_KG_palettes"
 
+
 #' @title Displays the color palette of the KaradaColor Package
 #' @description \code{Show_KG_Palette} Displays the color palette of the KaradaColor Package
 #' @importFrom grDevices colorRampPalette rgb
