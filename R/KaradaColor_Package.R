@@ -28,7 +28,7 @@ Show_KG_Palette <- function(name, n = 5,
   pal_name <- df_KG_palettes[[name]]
   #Displays the available color palette name if it is outside of the recorded name, and then exits
   if (is.null(pal_name)) {
-    stop("Palette not found.\nCheck the color palette name with the 'ALL_KG_Palette' command.")
+    stop("Palette not found.")
   }
   #Create color palette
   pal_col <- colorRampPalette(pal_name)
