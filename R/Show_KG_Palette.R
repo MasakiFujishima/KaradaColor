@@ -1,6 +1,7 @@
 #' @title Display the color palette data set for the KaradaColor Package in the console
 #' @description \code{Show_KG_Palette} Display the color palette data set for the KaradaColor Package in the console
 #' @importFrom crayon make_style combine_styles
+#' @param x color palette data
 #' @return Vector containing a hex color code representation for the chosen palette
 #' @export Show_KG_Palette
 #' @examples

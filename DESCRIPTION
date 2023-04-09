@@ -15,4 +15,5 @@ Depends:
 Imports: 
     crayon,
     graphics,
-    grDevices
+    grDevices,
+    ggplot2
