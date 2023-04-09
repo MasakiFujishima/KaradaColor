@@ -6,6 +6,7 @@
 
 Color palette of "[からだにいいもの](https://www.karada-good.net/)". The color palette consists of five colors selected from photographs of Japanese landscapes and foods. Color palette will be added sequentially.
 
+Color palettes to be added are introduced on [Instagrame](https://www.instagram.com/karadagood/) from time to time.
 
 
 ## Installation
