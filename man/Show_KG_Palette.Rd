@@ -6,6 +6,9 @@
 \usage{
 Show_KG_Palette(x = df_KG_palettes)
 }
+\arguments{
+\item{x}{color palette data}
+}
 \value{
 Vector containing a hex color code representation for the chosen palette
 }
