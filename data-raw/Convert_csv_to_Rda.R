@@ -8,7 +8,7 @@ ReadData <- read_csv("./data-raw/KG_palettes.csv")
 
 #Convert data.frame to list
 df_KG_palettes = list()
-for(i in 1:nrow(ReadData)) {
+for(i in seq_len(nrow(ReadData))) {
   df_KG_palettes[[i]] <- as.character(ReadData[i, 2:6])
 }
 names(df_KG_palettes) <- ReadData[[1]]
