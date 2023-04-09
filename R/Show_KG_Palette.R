@@ -9,7 +9,7 @@ Show_KG_Palette <- function(x = df_KG_palettes) {
   for(i in seq_along(x)){
     pal_name <- names(x)[i]
     pal_col <- x[[i]]
-    cols <- sapply(pal_col, color_styler)
+    cols <- sapply(pal_col, Console_Style)
     cat(paste0("Name:", pal_name,"\n",
                paste0(cols, collapse = " "), "\n"))
   }
