@@ -10,14 +10,14 @@ Show_KG_Palette <- function(x = df_KG_palettes) {
   for(i in seq_along(x)){
     pal_name <- names(x)[i]
     pal_col <- x[[i]]
-    cols <- sapply(pal_col, Console_Style)
+    cols <- sapply(pal_col, Console_Col)
     cat(paste0("Name:", pal_name,"\n",
                paste0(cols, collapse = " "), "\n"))
   }
 }
 
-Console_Style <- function(x) {
+Console_Col <- function(x) {
   text <- crayon::make_style("black", bg = FALSE)
-  background <- crayon::make_style(x, bg = TRUE, grey = FALSE)
-  crayon::combine_styles(text, background)(x)
+  backcol <- crayon::make_style(x, bg = TRUE, grey = FALSE)
+  crayon::combine_styles(text, backcol)(x)
 }
