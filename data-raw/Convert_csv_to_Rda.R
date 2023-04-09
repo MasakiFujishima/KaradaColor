@@ -14,5 +14,5 @@ for(i in 1:nrow(ReadData)) {
 names(df_KG_palettes) <- ReadData[[1]]
 
 #Save as Rda file
-save(df_KG_palettes, file = "./data/df_KG_palettes.rda")
+save(df_KG_palettes, file = "./R/sysdata.rda")
 
