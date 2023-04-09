@@ -39,11 +39,11 @@ Plot_KG_Palette("Kyoto_City", n = 5, colplot = TRUE)
 if(!require("tidyverse", quietly = TRUE)){
   install.packages("tidyverse");require("tidyverse")
 }
-ggplot(data = data.frame(x = 1:5, y = 1:5),
-       aes(x, y)) +
-  geom_point(col = Plot_KG_Palette("Sapporo_Sta", n = 5,
-                                   colplot = FALSE),
-             size = 10)
+ggplot(data = diamonds, aes(x = carat, y = price)) +
+  geom_point(aes(color = clarity), alpha = 0.3) +
+  scale_colour_manual(values = factor(Plot_KG_Palette("Sapporo_Sta",
+                                                      n = 8,
+                                                      colplot = FALSE)))
 ```
 
 <img src="man/figures/ex_plot.png" width="50%"/>
