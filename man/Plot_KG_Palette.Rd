@@ -4,14 +4,14 @@
 \alias{Plot_KG_Palette}
 \title{Displays the color palette of the KaradaColor Package}
 \usage{
-Plot_KG_Palette(name, n = 5, showPalette = TRUE)
+Plot_KG_Palette(name, n = 5, colplot = TRUE)
 }
 \arguments{
 \item{name}{color palette name}
 
 \item{n}{Number of colors to create}
 
-\item{showPalette}{Plotting Color Palette}
+\item{colplot}{Plotting Color Palette}
 }
 \value{
 Vector containing a hex color code representation for the chosen palette
@@ -20,5 +20,5 @@ Vector containing a hex color code representation for the chosen palette
 \code{Plot_KG_Palette} Displays the color palette of the KaradaColor Package
 }
 \examples{
-Plot_KG_Palette("Amanohashidate", n = 5, showPalette = TRUE)
+Plot_KG_Palette("Amanohashidate", n = 5, colplot = TRUE)
 }

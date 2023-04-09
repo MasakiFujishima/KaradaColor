@@ -1,6 +1,8 @@
 #' @title Display the color palette data set for the KaradaColor Package in the console
 #' @description \code{Show_KG_Palette} Display the color palette data set for the KaradaColor Package in the console
 #' @importFrom crayon make_style combine_styles
+#' @return Vector containing a hex color code representation for the chosen palette
+#' @export Show_KG_Palette
 #' @examples
 #' Show_KG_Palette()
 Show_KG_Palette <- function(x = df_KG_palettes) {

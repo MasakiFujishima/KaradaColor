@@ -6,6 +6,9 @@
 \usage{
 Show_KG_Palette(x = df_KG_palettes)
 }
+\value{
+Vector containing a hex color code representation for the chosen palette
+}
 \description{
 \code{Show_KG_Palette} Display the color palette data set for the KaradaColor Package in the console
 }

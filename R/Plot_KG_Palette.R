@@ -4,13 +4,12 @@
 #' @importFrom graphics image rect text
 #' @param name color palette name
 #' @param n Number of colors to create
-#' @param showPalette Plotting Color Palette
+#' @param colplot Plotting Color Palette
 #' @return Vector containing a hex color code representation for the chosen palette
-#' @export Show_KG_Palette
+#' @export Plot_KG_Palette
 #' @examples
-#' Plot_KG_Palette("Amanohashidate", n = 5, showPalette = TRUE)
-Plot_KG_Palette <- function(name, n = 5,
-                            showPalette = TRUE) {
+#' Plot_KG_Palette("Amanohashidate", n = 5, colplot = TRUE)
+Plot_KG_Palette <- function(name, n = 5, colplot = TRUE) {
   #Check the color palette name
   pal_name <- df_KG_palettes[[name]]
   #Displays the available color palette name if it is outside of the recorded name, and then exits
@@ -20,7 +19,7 @@ Plot_KG_Palette <- function(name, n = 5,
   #Create color palette
   pal_col <- colorRampPalette(pal_name)
 
-  if(showPalette == TRUE){
+  if(colplot == TRUE){
     ###Plot Preparation#####
     image(x = seq_len(n), y = 1, z = as.matrix(seq_len(n)),
           col = pal_col(n), xlab = "", ylab = "",
