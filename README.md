@@ -36,7 +36,9 @@ Plot_KG_Palette("Kyoto_City", n = 5, colplot = TRUE)
 
 ``` r
 #Exsample
-library("ggplot2")
+if(!require("tidyverse", quietly = TRUE)){
+  install.packages("tidyverse");require("tidyverse")
+}
 ggplot(data = data.frame(x = 1:5, y = 1:5),
        aes(x, y)) +
   geom_point(col = Plot_KG_Palette("Sapporo_Sta", n = 5,
