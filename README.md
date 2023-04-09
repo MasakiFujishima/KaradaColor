@@ -19,18 +19,21 @@ devtools::install_github("KaradaGood/KaradaColor")
 
 ``` r
 library(KaradaColor)
+#Display all palettes in console
 Show_KG_Palette()
 ```
 
-<img src="man/figures/Show_KG_Palette.png" width="100%"/>
+<img src="man/figures/Show_KG_Palette.png" width="50%"/>
 
 ``` r
+#Plot the palette
 Plot_KG_Palette("Kyoto_City", n = 5, colplot = TRUE)
 ```
 
-<img src="man/figures/Plot_KG_Palette.png" width="100%"/>
+<img src="man/figures/Plot_KG_Palette.png" width="50%"/>
 
 ``` r
+#Exsample
 library("ggplot2")
 ggplot(data = data.frame(x = 1:5, y = 1:5),
        aes(x, y)) +
@@ -39,4 +42,4 @@ ggplot(data = data.frame(x = 1:5, y = 1:5),
              size = 10)
 ```
 
-<img src="man/figures/ex_plot.png" width="100%"/>
+<img src="man/figures/ex_plot.png" width="50%"/>
