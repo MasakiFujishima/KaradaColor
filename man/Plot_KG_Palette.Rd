@@ -21,4 +21,9 @@ Vector containing a hex color code representation for the chosen palette
 }
 \examples{
 Plot_KG_Palette("Amanohashidate", n = 5, colplot = TRUE)
+library("ggplot2")
+ggplot(data = data.frame(x = 1:5, y = 1:5), aes(x, y)) +
+  geom_point(col = Plot_KG_Palette("Sapporo_Sta", n = 5,
+                                   colplot = FALSE),
+                                   size = 10)
 }
