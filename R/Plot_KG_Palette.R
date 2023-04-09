@@ -1,5 +1,5 @@
 #' @title Displays the color palette of the KaradaColor Package
-#' @description \code{Show_KG_Palette} Displays the color palette of the KaradaColor Package
+#' @description \code{Plot_KG_Palette} Displays the color palette of the KaradaColor Package
 #' @importFrom grDevices colorRampPalette rgb
 #' @importFrom graphics image rect text
 #' @param name color palette name
@@ -9,7 +9,6 @@
 #' @export Show_KG_Palette
 #' @examples
 #' Plot_KG_Palette("Amanohashidate", n = 5, showPalette = TRUE)
-
 Plot_KG_Palette <- function(name, n = 5,
                             showPalette = TRUE) {
   #Check the color palette name

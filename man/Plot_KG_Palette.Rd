@@ -17,7 +17,7 @@ Plot_KG_Palette(name, n = 5, showPalette = TRUE)
 Vector containing a hex color code representation for the chosen palette
 }
 \description{
-\code{Show_KG_Palette} Displays the color palette of the KaradaColor Package
+\code{Plot_KG_Palette} Displays the color palette of the KaradaColor Package
 }
 \examples{
 Plot_KG_Palette("Amanohashidate", n = 5, showPalette = TRUE)
