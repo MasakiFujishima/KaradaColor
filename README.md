@@ -29,7 +29,7 @@ Show_KG_Palette()
 
 ``` r
 #Plot the palette
-Plot_KG_Palette("Kyoto_City", n = 5, colplot = TRUE)
+Plot_KG_Palette("Kyoto_City", n = 10, colplot = TRUE)
 ```
 
 <img src="man/figures/Plot_KG_Palette.png" width="50%"/>
