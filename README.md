@@ -1,10 +1,10 @@
-
 # KaradaColor
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
-The goal of KaradaColor is to ...
+Color palette of "[からだにいいもの](https://www.karada-good.net/)". Each color palette is composed of five colors selected from photographs of Japanese landscapes and foods.
 
 ## Installation
 
@@ -17,10 +17,17 @@ devtools::install_github("KaradaGood/KaradaColor")
 
 ## Example
 
-This is a basic example which shows you how to solve a common problem:
-
 ``` r
 library(KaradaColor)
-## basic example code
-```
 
+Plot_KG_Palette("Kyoto_City", n = 5, colplot = TRUE)
+
+Show_KG_Palette()
+
+library("ggplot2")
+ggplot(data = data.frame(x = 1:5, y = 1:5),
+       aes(x, y)) +
+  geom_point(col = Plot_KG_Palette("Sapporo_Sta", n = 5,
+                                   colplot = FALSE),
+             size = 10)
+```
