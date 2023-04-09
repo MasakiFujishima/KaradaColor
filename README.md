@@ -4,7 +4,7 @@
 
 <!-- badges: end -->
 
-11 Color palette of "[からだにいいもの](https://www.karada-good.net/)". Each color palette is composed of five colors selected from photographs of Japanese landscapes and foods. Color palette will be added sequentially.
+Color palette of "[からだにいいもの](https://www.karada-good.net/)". The 11-color palette consists of five colors selected from photographs of Japanese landscapes and foods. Color palette will be added sequentially.
 
 
 
