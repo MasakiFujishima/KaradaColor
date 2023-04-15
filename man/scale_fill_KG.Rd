@@ -24,7 +24,7 @@ scale_fill_KG(
 Create a user defined color palette for ggplot2.
 }
 \description{
-\code{scale_fill_KG} Use KaradaColor fills on ggplot2
+\code{scale_fill_KG} Use KaradaColor color palette on ggplot2 fills.
 }
 \examples{
 set.seed(1)
@@ -39,5 +39,5 @@ ggplot(data, aes(X, Y, fill= Z)) +
                 alpha = 1, na.value = "red")
 }
 \author{
-KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
+Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 }

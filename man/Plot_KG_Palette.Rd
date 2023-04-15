@@ -2,7 +2,7 @@
 % Please edit documentation in R/Plot_KG_Palette.R
 \name{plot_KG_palette}
 \alias{plot_KG_palette}
-\title{Displays the color palette of the KaradaColor Package}
+\title{Draw the color palette of the KaradaColor Package}
 \usage{
 plot_KG_palette(n = 5, name = "Sapporo_Sta", colplot = TRUE)
 }
@@ -17,7 +17,7 @@ plot_KG_palette(n = 5, name = "Sapporo_Sta", colplot = TRUE)
 Vector containing a hex color code representation for the chosen palette
 }
 \description{
-\code{plot_KG_Palette} Displays the color palette of the KaradaColor Package
+\code{plot_KG_Palette} This function draw the color palette of the KaradaColor Package.
 }
 \examples{
 plot_KG_palette(name = "Amanohashidate", n = 5, colplot = TRUE)
@@ -28,5 +28,5 @@ ggplot(data = data.frame(x = 1:5, y = 1:5), aes(x, y)) +
                                    size = 10)
 }
 \author{
-KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
+Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 }

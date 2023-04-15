@@ -1,6 +1,6 @@
-#' Get color palette data set for the KaradaColor Package
+#' Get color palette data
 #'
-#' \code{get_KG_color} Get color palette data set for the KaradaColor Package
+#' \code{get_KG_color} This function creates a vector of \code{n} color palette data for the KaradaColor Package.
 #' @importFrom grDevices colorRamp rgb
 #' @param n Number of colors to create.
 #' @param name color palette name. (default: \code{"Sapporo_Sta"})
@@ -40,8 +40,8 @@ get_KG_palette <- function(name = "Sapporo_Sta", alpha = 1){
 
 #' Use KaradaColor scales on ggplot2
 #'
-#' {scale_color_KG} Use KaradaColor scales on ggplot2
-#' @importFrom ggplot2 discrete_scale scale_fill_gradientn
+#' {scale_color_KG} Use KaradaColor color palette on ggplot2 colors.
+#' @importFrom ggplot2 discrete_scale scale_color_gradientn
 #' @param name color palette name. (default: \code{"Sapporo_Sta"})
 #' @param alpha	The alpha transparency. Numbers range from 0-1. see argument alpha in \code{\link[grDevices]{rgb}}.
 #' @param na.value Color of missing value.
@@ -83,7 +83,7 @@ scale_colour_KG <- scale_color_KG
 
 #' Use KaradaColor fills on ggplot2
 #'
-#' \code{scale_fill_KG} Use KaradaColor fills on ggplot2
+#' \code{scale_fill_KG} Use KaradaColor color palette on ggplot2 fills.
 #' @importFrom ggplot2 discrete_scale scale_fill_gradientn
 #' @param name color palette name. (default: \code{"Sapporo_Sta"})
 #' @param alpha	The alpha transparency. Numbers range from 0-1. see argument alpha in \code{\link[grDevices]{rgb}}.

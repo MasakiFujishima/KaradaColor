@@ -3,7 +3,7 @@
 \name{get_KG_color}
 \alias{get_KG_color}
 \alias{get_KG_palette}
-\title{Get color palette data set for the KaradaColor Package}
+\title{Get color palette data}
 \usage{
 get_KG_color(n = 5, name = "Sapporo_Sta", alpha = 1)
 
@@ -20,7 +20,7 @@ get_KG_palette(name = "Sapporo_Sta", alpha = 1)
 Vector containing a hex color code representation for the chosen palette.
 }
 \description{
-\code{get_KG_color} Get color palette data set for the KaradaColor Package
+\code{get_KG_color} This function creates a vector of \code{n} color palette data for the KaradaColor Package.
 }
 \examples{
 library("scales")
@@ -33,5 +33,5 @@ canvas_strokes(colors = get_KG_color(name = "Otaru_Unga"),
                resolution = 350)
 }
 \author{
-KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
+Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 }

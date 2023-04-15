@@ -3,7 +3,7 @@
 \name{show_KG_palette}
 \alias{show_KG_palette}
 \alias{console_col}
-\title{Display the color palette data set for the KaradaColor Package in the console}
+\title{Display the color palette data set in the consol}
 \usage{
 show_KG_palette(x = df_KG_palettes)
 
@@ -16,11 +16,11 @@ console_col(x)
 Vector containing a hex color code representation for the chosen palette
 }
 \description{
-\code{show_KG_palette} Display the color palette data set for the KaradaColor Package in the console
+\code{show_KG_palette} This function draws display the color palette data set for the KaradaColor Package in the console.
 }
 \examples{
 show_KG_palette()
 }
 \author{
-KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770}{Personal Blog}
+Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 }

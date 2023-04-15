@@ -32,7 +32,7 @@ scale_colour_KG(
 Create a user defined color palette for ggplot2.
 }
 \description{
-{scale_color_KG} Use KaradaColor scales on ggplot2
+{scale_color_KG} Use KaradaColor color palette on ggplot2 colors.
 }
 \examples{
 library("ggplot2")
@@ -44,5 +44,5 @@ ggplot(data = diamonds, aes(x = cut, y = price,
   theme_dark()
 }
 \author{
-KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
+Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 }
