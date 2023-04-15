@@ -13,3 +13,10 @@
 ## revdepcheck results
 
 There are currently no downstream dependencies for this package
+
+## Resubmission
+
+This is a resubmission. In this version I have:
+
+* Changed MAINTAINER to full name.
+* Changed URL of man/show_KG_palette.Rd to "https://www.karada-good.net/analyticsr/r-770/".
