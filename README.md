@@ -23,14 +23,14 @@ devtools::install_github("KaradaGood/KaradaColor")
 ``` r
 library(KaradaColor)
 #Display all palettes in console
-Show_KG_Palette()
+show_KG_palette()
 ```
 
 <img src="man/figures/Show_KG_Palette.png" width="50%"/>
 
 ``` r
 #Plot the palette
-Plot_KG_Palette("Kyoto_City", n = 10, colplot = TRUE)
+plot_KG_palette("Kyoto_City", n = 10, colplot = TRUE)
 ```
 
 <img src="man/figures/Plot_KG_Palette.png" width="50%"/>
@@ -40,11 +40,18 @@ Plot_KG_Palette("Kyoto_City", n = 10, colplot = TRUE)
 if(!require("tidyverse", quietly = TRUE)){
   install.packages("tidyverse");require("tidyverse")
 }
-ggplot(data = diamonds, aes(x = carat, y = price)) +
-  geom_point(aes(color = clarity), alpha = 0.3) +
-  scale_colour_manual(values = factor(Plot_KG_Palette("Sapporo_Sta",
-                                                      n = 8,
-                                                      colplot = FALSE)))
+set.seed(1)
+x <- LETTERS[1:20]
+y <- paste0("var", seq(1,20))
+data <- expand.grid(X=x, Y=y)
+data$Z <- sample(c(NA, rnorm(15)), 20, replace = TRUE)
+library("tidyverse")
+ggplot(data, aes(X, Y, fill= Z)) +
+  geom_tile() +
+  scale_fill_KG(discrete = FALSE, name = "Hanamushiro",
+                alpha = 1, na.value = "red")
 ```
 
 <img src="man/figures/ex_plot.png" width="50%"/>
+
+
