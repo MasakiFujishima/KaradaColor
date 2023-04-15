@@ -7,7 +7,7 @@
 #' @param name color palette name. (default: \code{"Sapporo_Sta"})
 #' @param colplot Plotting Color Palette.
 #' @return Vector containing a hex color code representation for the chosen palette
-#' @author KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
+#' @author Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 #' @export plot_KG_palette
 #' @examples
 #' plot_KG_palette(name = "Amanohashidate", n = 5, colplot = TRUE)

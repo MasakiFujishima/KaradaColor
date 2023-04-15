@@ -6,7 +6,7 @@
 #' @param name color palette name. (default: \code{"Sapporo_Sta"})
 #' @param alpha	The alpha transparency. Numbers range from 0-1. see argument alpha in \code{\link[grDevices]{rgb}}.
 #' @return Vector containing a hex color code representation for the chosen palette.
-#' @author KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
+#' @author Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 #' @export get_KG_color
 #' @examples
 #' library("scales")
@@ -47,7 +47,7 @@ get_KG_palette <- function(name = "Sapporo_Sta", alpha = 1){
 #' @param na.value Color of missing value.
 #' @param discrete Generate a discrete palette. (\code{FALSE} - generate continuous palette)
 #' @return Create a user defined color palette for ggplot2.
-#' @author KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
+#' @author Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 #' @export scale_color_KG
 #' @examples
 #' library("ggplot2")
@@ -90,7 +90,7 @@ scale_colour_KG <- scale_color_KG
 #' @param na.value Color of missing value.
 #' @param discrete Generate a discrete palette. (\code{FALSE} - generate continuous palette)
 #' @return Create a user defined color palette for ggplot2.
-#' @author KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
+#' @author Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 #' @export scale_fill_KG
 #' @examples
 #' set.seed(1)
