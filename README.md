@@ -37,6 +37,7 @@ plot_KG_palette("Kyoto_City", n = 10, colplot = TRUE)
 
 ## ggplot2
 The package contains colour scale functions for `scale_color_KG()` and `scale_fill_KG()`. 
+Missing values are initially displayed in red.
 
 ``` r
 #Continuous scale exsample
