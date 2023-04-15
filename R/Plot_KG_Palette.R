@@ -1,5 +1,6 @@
-#' @title Displays the color palette of the KaradaColor Package
-#' @description \code{plot_KG_Palette} Displays the color palette of the KaradaColor Package
+#' Displays the color palette of the KaradaColor Package
+#'
+#' \code{plot_KG_Palette} Displays the color palette of the KaradaColor Package
 #' @importFrom grDevices colorRampPalette rgb
 #' @importFrom graphics image rect text
 #' @param n Number of colors to create.

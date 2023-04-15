@@ -32,7 +32,7 @@ scale_colour_KG(
 Create a user defined color palette for ggplot2.
 }
 \description{
-\code{scale_color_KG} Use KaradaColor scales on ggplot2
+{scale_color_KG} Use KaradaColor scales on ggplot2
 }
 \examples{
 library("ggplot2")
