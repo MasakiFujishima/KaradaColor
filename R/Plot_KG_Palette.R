@@ -2,19 +2,20 @@
 #' @description \code{Plot_KG_Palette} Displays the color palette of the KaradaColor Package
 #' @importFrom grDevices colorRampPalette rgb
 #' @importFrom graphics image rect text
-#' @param name color palette name
-#' @param n Number of colors to create
-#' @param colplot Plotting Color Palette
+#' @param n Number of colors to create.
+#' @param name color palette name. (default: \code{"Sapporo_Sta"})
+#' @param colplot Plotting Color Palette.
 #' @return Vector containing a hex color code representation for the chosen palette
+#' @author KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 #' @export Plot_KG_Palette
 #' @examples
-#' Plot_KG_Palette("Amanohashidate", n = 5, colplot = TRUE)
+#' Plot_KG_Palette(name = "Amanohashidate", n = 5, colplot = TRUE)
 #' library("ggplot2")
 #' ggplot(data = data.frame(x = 1:5, y = 1:5), aes(x, y)) +
 #'   geom_point(col = Plot_KG_Palette("Sapporo_Sta", n = 5,
 #'                                    colplot = FALSE),
 #'                                    size = 10)
-Plot_KG_Palette <- function(name, n = 5, colplot = TRUE) {
+Plot_KG_Palette <- function(n = 5, name = "Sapporo_Sta", colplot = TRUE) {
   #Check the color palette name
   pal_name <- df_KG_palettes[[name]]
   #Displays the available color palette name if it is outside of the recorded name, and then exits

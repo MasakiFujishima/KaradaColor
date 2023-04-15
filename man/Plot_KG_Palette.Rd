@@ -4,14 +4,14 @@
 \alias{Plot_KG_Palette}
 \title{Displays the color palette of the KaradaColor Package}
 \usage{
-Plot_KG_Palette(name, n = 5, colplot = TRUE)
+Plot_KG_Palette(n = 5, name = "Sapporo_Sta", colplot = TRUE)
 }
 \arguments{
-\item{name}{color palette name}
+\item{n}{Number of colors to create.}
 
-\item{n}{Number of colors to create}
+\item{name}{color palette name. (default: \code{"Sapporo_Sta"})}
 
-\item{colplot}{Plotting Color Palette}
+\item{colplot}{Plotting Color Palette.}
 }
 \value{
 Vector containing a hex color code representation for the chosen palette
@@ -20,10 +20,13 @@ Vector containing a hex color code representation for the chosen palette
 \code{Plot_KG_Palette} Displays the color palette of the KaradaColor Package
 }
 \examples{
-Plot_KG_Palette("Amanohashidate", n = 5, colplot = TRUE)
+Plot_KG_Palette(name = "Amanohashidate", n = 5, colplot = TRUE)
 library("ggplot2")
 ggplot(data = data.frame(x = 1:5, y = 1:5), aes(x, y)) +
   geom_point(col = Plot_KG_Palette("Sapporo_Sta", n = 5,
                                    colplot = FALSE),
                                    size = 10)
+}
+\author{
+KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 }

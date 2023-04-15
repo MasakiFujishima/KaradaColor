@@ -2,12 +2,15 @@
 % Please edit documentation in R/Show_KG_Palette.R
 \name{Show_KG_Palette}
 \alias{Show_KG_Palette}
+\alias{Console_Col}
 \title{Display the color palette data set for the KaradaColor Package in the console}
 \usage{
 Show_KG_Palette(x = df_KG_palettes)
+
+Console_Col(x)
 }
 \arguments{
-\item{x}{color palette data}
+\item{x}{color palette data.}
 }
 \value{
 Vector containing a hex color code representation for the chosen palette
@@ -17,4 +20,7 @@ Vector containing a hex color code representation for the chosen palette
 }
 \examples{
 Show_KG_Palette()
+}
+\author{
+KARADA-GOOD \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
 }
