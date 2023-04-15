@@ -39,7 +39,7 @@ plot_KG_palette("Kyoto_City", n = 10, colplot = TRUE)
 The package contains colour scale functions for `scale_color_KG()` and `scale_fill_KG()`. 
 
 ``` r
-#Fill exsample
+#Continuous scale exsample
 if(!require("tidyverse", quietly = TRUE)){
   install.packages("tidyverse");require("tidyverse")
 }
@@ -58,7 +58,7 @@ ggplot(data, aes(X, Y, fill= Z)) +
 <img src="man/figures/scale_fill_KG.png" width="50%"/>
 
 ``` r
-#Color exsample
+#Discrete scale exsample
 library("ggplot2")
 ggplot(data = diamonds, aes(x = cut, y = price,
                             color = cut, fill = cut)) +
@@ -70,4 +70,14 @@ ggplot(data = diamonds, aes(x = cut, y = price,
 
 <img src="man/figures/scale_color_KG.png" width="50%"/>
 
+## Rtistry and other packages
+This can be done with the get_KG_color() command.
+``` r
+library("aRtsy")
+set.seed(1234)
+canvas_strokes(colors = get_KG_color(name = "Otaru_Unga"),
+               neighbors = 1, p = 0.02, iterations = 1,
+               resolution = 350)
+```
 
+<img src="man/figures/get_KG_color.png" width="50%"/>

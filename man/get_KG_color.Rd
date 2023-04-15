@@ -25,6 +25,7 @@ Vector containing a hex color code representation for the chosen palette.
 \examples{
 library("scales")
 show_col(get_KG_color(n = 20, name = "Totan", alpha = 0.5))
+
 library("aRtsy")
 set.seed(1234)
 canvas_strokes(colors = get_KG_color(name = "Otaru_Unga"),
