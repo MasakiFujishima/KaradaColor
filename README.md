@@ -35,8 +35,11 @@ plot_KG_palette("Kyoto_City", n = 10, colplot = TRUE)
 
 <img src="man/figures/Plot_KG_Palette.png" width="50%"/>
 
+## ggplot2
+The package contains colour scale functions for `scale_color_KG()` and `scale_fill_KG()`. 
+
 ``` r
-#Exsample
+#Fill exsample
 if(!require("tidyverse", quietly = TRUE)){
   install.packages("tidyverse");require("tidyverse")
 }
@@ -52,6 +55,19 @@ ggplot(data, aes(X, Y, fill= Z)) +
                 alpha = 1, na.value = "red")
 ```
 
-<img src="man/figures/ex_plot.png" width="50%"/>
+<img src="man/figures/scale_fill_KG.png" width="50%"/>
+
+``` r
+#Color exsample
+library("ggplot2")
+ggplot(data = diamonds, aes(x = cut, y = price,
+                            color = cut, fill = cut)) +
+  geom_boxplot() +
+  scale_color_KG(name = "Hanamushiro", alpha = 0.3) +
+  scale_fill_KG(name = "Hokkaido_Sky", alpha = 1) +
+  theme_dark()
+```
+
+<img src="man/figures/scale_color_KG.png" width="50%"/>
 
 
