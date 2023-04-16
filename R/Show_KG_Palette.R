@@ -9,12 +9,26 @@
 #' @examples
 #' show_KG_palette()
 show_KG_palette <- function(x = df_KG_palettes) {
-  for(i in seq_along(x)){
-    pal_name <- names(x)[i]
-    pal_col <- x[[i]]
-    cols <- sapply(pal_col, console_col)
-    cat(paste0("Name:", pal_name,"\n",
-               paste0(cols, collapse = " "), "\n"))
+
+  if(inherits(x, "list")){
+    for(i in seq_along(x)){
+      pal_name <- names(x)[i]
+      pal_col <- x[[i]]
+      cols <- sapply(pal_col, console_col)
+      cat(paste0("Name:", pal_name,"\n",
+                 paste0(cols, collapse = " "), "\n"))
+    }}
+
+  if(inherits(x, "data.frame")){
+    CreateCC <- matrix(nrow = nrow(x), ncol = 2)
+    for(i in seq_along(x)){
+      pal_name <- names(x)[i]
+      pal_col <- x[[i]]
+      cols <- sapply(pal_col, console_col)
+      CreateCC[, i] <- cols}
+
+    cat(paste0("Base", paste0(rep("", 6), collapse = " "), "Complementary", "\n",
+               paste0(CreateCC[, 1], CreateCC[, 2], collapse = "\n")))
   }
 }
 
@@ -23,5 +37,6 @@ show_KG_palette <- function(x = df_KG_palettes) {
 console_col <- function(x) {
   text <- crayon::make_style("black", bg = FALSE)
   backcol <- crayon::make_style(x, bg = TRUE, grey = FALSE)
-  crayon::combine_styles(text, backcol)(x)
+  return(crayon::combine_styles(text, backcol)(x))
 }
+
