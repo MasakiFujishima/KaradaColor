@@ -19,16 +19,16 @@ show_KG_palette <- function(x = df_KG_palettes) {
       cols <- sapply(pal_col, console_col)
       cat(paste0("Name:", pal_name,"\n",
                  paste0(cols, collapse = " "), "\n"))
-      }
+    }
     }
 
   if(inherits(x, "data.frame")){
 
     colName <- colnames(x)
+    CreateCC <- matrix(nrow = nrow(x), ncol = ncol(x))
 
     for(i in seq_along(x)){
 
-      CreateCC <- matrix(nrow = nrow(x), ncol = ncol(x))
       pal_name <- names(x)[i]
       pal_col <- x[[i]]
       cols <- sapply(pal_col, console_col)
@@ -36,9 +36,9 @@ show_KG_palette <- function(x = df_KG_palettes) {
 
       }
 
-    if(length(colName) < 1){
+    if(length(colName) < 2){
 
-      return(cat(paste0(colName, ":", paste0(CreateCC[, 1], collapse = ""))))
+      return(cat(paste0(colName, ":", paste0(as.vector(CreateCC), collapse = ""))))
 
       }else{
 
@@ -46,7 +46,7 @@ show_KG_palette <- function(x = df_KG_palettes) {
                         paste0(CreateCC[, 1], CreateCC[, 2], collapse = "\n"))))
 
       }
-    }
+  }
 }
 
 #' @rdname show_KG_palette
