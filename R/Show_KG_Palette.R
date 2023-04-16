@@ -29,7 +29,6 @@ show_KG_palette <- function(x = df_KG_palettes) {
 
     for(i in seq_along(x)){
 
-      pal_name <- names(x)[i]
       pal_col <- x[[i]]
       cols <- sapply(pal_col, console_col)
       CreateCC[, i] <- cols
