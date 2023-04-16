@@ -36,16 +36,16 @@ show_KG_palette <- function(x = df_KG_palettes) {
 
       }
 
-    if(length(colName) < 2){
+    if(length(colName) < 1){
 
       return(cat(paste0(colName, ":", paste0(CreateCC[, 1], collapse = ""))))
 
       }else{
 
-        return(cat(paste0(colName[1], paste0(rep("", 6), collapse = " "), colName[2], "\n",
-                          paste0(CreateCC[, 1], CreateCC[, 2], collapse = "\n"))))
+      return(cat(paste0(colName[1], paste0(rep("", 6), collapse = " "), colName[2], "\n",
+                        paste0(CreateCC[, 1], CreateCC[, 2], collapse = "\n"))))
 
-        }
+      }
     }
 }
 
