@@ -4,14 +4,14 @@
 \alias{plot_KG_palette}
 \title{Draw the color palette of the KaradaColor Package}
 \usage{
-plot_KG_palette(n = 5, name = "Sapporo_Sta", colplot = TRUE)
+plot_KG_palette(name = "Sapporo_Sta", color = NULL, n = 5)
 }
 \arguments{
+\item{name}{color palette color palette name. (default: \code{"Sapporo_Sta"})}
+
+\item{color}{color data. Precedence over name except NULL. (default: NULL)}
+
 \item{n}{Number of colors to create.}
-
-\item{name}{color palette name. (default: \code{"Sapporo_Sta"})}
-
-\item{colplot}{Plotting Color Palette.}
 }
 \value{
 Vector containing a hex color code representation for the chosen palette
@@ -20,11 +20,10 @@ Vector containing a hex color code representation for the chosen palette
 \code{plot_KG_Palette} This function draw the color palette of the KaradaColor Package.
 }
 \examples{
-plot_KG_palette(name = "Amanohashidate", n = 5, colplot = TRUE)
+plot_KG_palette(name = "Amanohashidate", n = 5)
 library("ggplot2")
 ggplot(data = data.frame(x = 1:5, y = 1:5), aes(x, y)) +
-  geom_point(col = plot_KG_palette("Sapporo_Sta", n = 5,
-                                   colplot = FALSE),
+  geom_point(col = plot_KG_palette("Sapporo_Sta", n = 5),
                                    size = 10)
 }
 \author{
