@@ -1,6 +1,7 @@
 # KaradaColor 0.1.3
 
-Add KG_create_cc command. This function create complementary color.
+Add:KG_create_cc() command. This function create complementary color.
+Change:show_KG_palette() command. Support for data.frame class.
 
 # KaradaColor 0.1.2
 
