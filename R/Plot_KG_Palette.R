@@ -34,6 +34,12 @@ plot_KG_palette <- function(name = "Sapporo_Sta", color = NULL, n = 5) {
 
   }else{
 
+    if (!is.data.frame(color)) {
+
+      stop("データフレームではない")
+
+    }
+
     color_data <- color[[1]]
     n <- length(color_data)
     image(x = seq_len(n), y = 1, z = as.matrix(seq_len(n)),
