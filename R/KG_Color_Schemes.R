@@ -9,6 +9,7 @@
 #' @export KG_create_cc
 #' @examples
 #' show_KG_palette(KG_create_cc())
+#' plot_KG_palette(color = KG_create_cc())
 KG_create_cc <- function(basecols = c("#ff48ac", "red"), alpha = 1){
 
   n <- length(basecols)

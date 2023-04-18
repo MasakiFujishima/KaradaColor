@@ -20,6 +20,13 @@ show_KG_palette <- function(x = df_KG_palettes) {
       cat(paste0("Name:", pal_name,"\n",
                  paste0(cols, collapse = " "), "\n"))
     }
+  }
+  
+  if(inherits(x, "character")){
+    
+    cols <- sapply(x, console_col)
+    cat(paste0("Color:", paste0(cols, collapse = " ")))
+    
     }
 
   if(inherits(x, "data.frame")){
