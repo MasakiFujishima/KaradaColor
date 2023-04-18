@@ -147,7 +147,7 @@ image_add_textAcode <- function(coldata, xlab = NULL, ylab = NULL, get_colnames,
 
     }
 
-    return(show_KG_palette(as.character(x)))
+    return(show_KG_palette(as.character(coldata)))
 
   }
 }
