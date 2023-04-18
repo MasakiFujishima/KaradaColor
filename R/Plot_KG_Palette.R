@@ -43,13 +43,13 @@ plot_KG_palette <- function(name = "Sapporo_Sta", color = NULL, n = 5, showcode 
 
   #print(cxlist)
 
-  image(x = seq_len(ncol(cxlist$x)), y = seq_len(nrow(cxlist$x)),
-        z = t(matrix(data = seq_len(ncol(cxlist$x)*nrow(cxlist$x)),
-                     nrow = nrow(cxlist$x), ncol = ncol(cxlist$x))),
-        col = as.character(cxlist$x), xlab = "", ylab = "",
+  image(x = seq_len(ncol(cxlist$coldata)), y = seq_len(nrow(cxlist$coldata)),
+        z = t(matrix(data = seq_len(ncol(cxlist$coldata)*nrow(cxlist$coldata)),
+                     nrow = nrow(cxlist$coldata), ncol = ncol(cxlist$coldata))),
+        col = as.character(cxlist$coldata), xlab = "", ylab = "",
         xaxt = "n", yaxt = "n", bty = "n")
 
-  image_add_textAcode(cxlist$x, cxlist$xlab, cxlist$ylab,
+  image_add_textAcode(cxlist$coldata, cxlist$xlab, cxlist$ylab,
                       cxlist$get_colpalnames, showcode)
 
 }
