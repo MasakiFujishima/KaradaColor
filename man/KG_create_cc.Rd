@@ -19,6 +19,7 @@ Return base and complementary color in a data frame
 }
 \examples{
 show_KG_palette(KG_create_cc())
+plot_KG_palette(color = KG_create_cc())
 }
 \author{
 Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}

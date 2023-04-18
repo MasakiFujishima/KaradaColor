@@ -54,8 +54,8 @@ get_KG_palette <- function(name = "Sapporo_Sta", alpha = 1){
 #' ggplot(data = diamonds, aes(x = cut, y = price,
 #'                             color = cut, fill = cut)) +
 #'   geom_boxplot() +
-#'   scale_color_KG(name = "Hanamushiro", alpha = 0.3) +
-#'   scale_fill_KG(name = "Hokkaido_Sky", alpha = 1) +
+#'   scale_color_KG(name = "Hanamushiro", alpha = 0.2) +
+#'   scale_fill_KG(name = "Hokkaido_Sky", alpha = 0.2) +
 #'   theme_dark()
 scale_color_KG <- function(name = "Sapporo_Sta", alpha = 1,
                            na.value = "red", discrete = TRUE) {
@@ -87,7 +87,7 @@ scale_colour_KG <- scale_color_KG
 #' @importFrom ggplot2 discrete_scale scale_fill_gradientn
 #' @param name color palette name. (default: \code{"Sapporo_Sta"})
 #' @param alpha	The alpha transparency. Numbers range from 0-1. see argument alpha in \code{\link[grDevices]{rgb}}.
-#' @param na.value Color of missing value.
+#' @param na.value Color of missing value.(default: "red")
 #' @param discrete Generate a discrete palette. (\code{FALSE} - generate continuous palette)
 #' @return Create a user defined color palette for ggplot2.
 #' @author Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
@@ -102,7 +102,7 @@ scale_colour_KG <- scale_color_KG
 #' ggplot(data, aes(X, Y, fill= Z)) +
 #'   geom_tile() +
 #'   scale_fill_KG(discrete = FALSE, name = "Hanamushiro",
-#'                 alpha = 1, na.value = "red")
+#'                 alpha = 0.4, na.value = "red")
 scale_fill_KG <- function(name = "Sapporo_Sta", alpha = 1,
                           na.value = "red", discrete = TRUE) {
 

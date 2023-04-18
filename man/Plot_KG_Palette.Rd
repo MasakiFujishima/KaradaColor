@@ -2,29 +2,49 @@
 % Please edit documentation in R/Plot_KG_Palette.R
 \name{plot_KG_palette}
 \alias{plot_KG_palette}
+\alias{convert_colTodf}
+\alias{image_add_textAcode}
 \title{Draw the color palette of the KaradaColor Package}
 \usage{
-plot_KG_palette(name = "Sapporo_Sta", color = NULL, n = 5)
+plot_KG_palette(name = "Sapporo_Sta", color = NULL, n = 5, showcode = TRUE)
+
+convert_colTodf(x, ...)
+
+image_add_textAcode(
+  coldata,
+  xlab = NULL,
+  ylab = NULL,
+  get_colnames,
+  showcode,
+  ...
+)
 }
 \arguments{
-\item{name}{color palette color palette name. (default: \code{"Sapporo_Sta"})}
+\item{name}{Color palette color palette name. (default: \code{"Sapporo_Sta"})}
 
-\item{color}{color data. Precedence over name except NULL. (default: NULL)}
+\item{color}{Color data. Precedence over name except NULL. (default: NULL)}
 
 \item{n}{Number of colors to create.}
+
+\item{showcode}{Add a color code to the plot.}
 }
 \value{
 Vector containing a hex color code representation for the chosen palette
+
+list class containing a palette name(color name), color data, column name of color data, row name of color data.
 }
 \description{
 \code{plot_KG_Palette} This function draw the color palette of the KaradaColor Package.
 }
 \examples{
-plot_KG_palette(name = "Amanohashidate", n = 5)
-library("ggplot2")
-ggplot(data = data.frame(x = 1:5, y = 1:5), aes(x, y)) +
-  geom_point(col = plot_KG_palette("Sapporo_Sta", n = 5),
-                                   size = 10)
+#Draw the color palette of the KaradaColor
+plot_KG_palette(name = "Amanohashidate", n = 5, showcode = FALSE)
+#Draw the KG_create_cc command
+plot_KG_palette(color = KG_create_cc(c("#ff48ac", "yellow")), showcode = TRUE)
+#Draw the KG_create_tc command
+plot_KG_palette(color = KG_create_tc("yellow"), showcode = TRUE)
+#Color data
+plot_KG_palette(color = c("gray"), showcode = FALSE)
 }
 \author{
 Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}

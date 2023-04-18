@@ -1,3 +1,8 @@
+# KaradaColor 0.1.4
+Change:plot_KG_palette() command. Support for color vector data.
+Add:convert_colTodf() command. This function convert color data to data.frame class.
+Add:image_add_textAcode() command. This function Add to image() command text and color code.
+
 # KaradaColor 0.1.3
 
 Add:KG_create_cc() command. This function create complementary color.

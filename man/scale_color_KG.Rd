@@ -39,8 +39,8 @@ library("ggplot2")
 ggplot(data = diamonds, aes(x = cut, y = price,
                             color = cut, fill = cut)) +
   geom_boxplot() +
-  scale_color_KG(name = "Hanamushiro", alpha = 0.3) +
-  scale_fill_KG(name = "Hokkaido_Sky", alpha = 1) +
+  scale_color_KG(name = "Hanamushiro", alpha = 0.2) +
+  scale_fill_KG(name = "Hokkaido_Sky", alpha = 0.2) +
   theme_dark()
 }
 \author{

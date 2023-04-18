@@ -16,7 +16,7 @@ scale_fill_KG(
 
 \item{alpha}{The alpha transparency. Numbers range from 0-1. see argument alpha in \code{\link[grDevices]{rgb}}.}
 
-\item{na.value}{Color of missing value.}
+\item{na.value}{Color of missing value.(default: "red")}
 
 \item{discrete}{Generate a discrete palette. (\code{FALSE} - generate continuous palette)}
 }
@@ -36,7 +36,7 @@ library("ggplot2")
 ggplot(data, aes(X, Y, fill= Z)) +
   geom_tile() +
   scale_fill_KG(discrete = FALSE, name = "Hanamushiro",
-                alpha = 1, na.value = "red")
+                alpha = 0.4, na.value = "red")
 }
 \author{
 Masaki Fujishima \email{info@karada-good.net}, \href{https://github.com/KaradaGood/KaradaColor}{Github}, \href{https://www.karada-good.net/analyticsr/r-770/}{Personal Blog}
