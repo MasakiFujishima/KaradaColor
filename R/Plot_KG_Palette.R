@@ -55,6 +55,7 @@ plot_KG_palette <- function(name = "Sapporo_Sta", color = NULL, n = 5, showcode 
 }
 
 #' Convert color data to data.frame
+#'
 #' @rdname plot_KG_palette
 #' @return list class containing a palette name(color name), color data, column name of color data, row name of color data.
 #' @export
@@ -99,6 +100,7 @@ convert_colTodf <- function (x, ...) {
   }
 
 #' Add to image() command text and color code
+#'
 #' @rdname plot_KG_palette
 #' @export
 image_add_textAcode <- function(coldata, xlab = NULL, ylab = NULL, get_colnames, showcode, ...) {
