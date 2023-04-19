@@ -23,20 +23,34 @@ devtools::install_github("KaradaGood/KaradaColor")
 ``` r
 library(KaradaColor)
 #Display all palettes in console
-show_KG_palette()
+kg_show_consol()
 ```
 
 <img src="man/figures/Show_KG_Palette.png" width="50%"/>
 
 ``` r
 #Plot the palette
-plot_KG_palette("Kyoto_City", n = 10, colplot = TRUE)
+kg_plot_color("Kyoto_City", n = 10, showcode = TRUE)
 ```
 
 <img src="man/figures/Plot_KG_Palette.png" width="50%"/>
 
+``` r
+#Create complementary color
+kg_plot_color(color = kg_create_cc())
+```
+
+<img src="man/figures/kg_create_cc.png" width="50%"/>
+
+``` r
+#Create triad color
+kg_plot_color(color = kg_create_tc())
+```
+
+<img src="man/figures/kg_create_tc.png" width="50%"/>
+
 ## ggplot2
-The package contains colour scale functions for `scale_color_KG()` and `scale_fill_KG()`. 
+The package contains colour scale functions for `scale_color_kg()` and `scale_fill_kg()`. 
 Missing values are initially displayed in red.
 
 ``` r
@@ -52,7 +66,7 @@ data$Z <- sample(c(NA, rnorm(15)), 20, replace = TRUE)
 library("tidyverse")
 ggplot(data, aes(X, Y, fill= Z)) +
   geom_tile() +
-  scale_fill_KG(discrete = FALSE, name = "Hanamushiro",
+  scale_fill_kg(discrete = FALSE, name = "Hanamushiro",
                 alpha = 1, na.value = "red")
 ```
 
@@ -64,19 +78,19 @@ library("ggplot2")
 ggplot(data = diamonds, aes(x = cut, y = price,
                             color = cut, fill = cut)) +
   geom_boxplot() +
-  scale_color_KG(name = "Hanamushiro", alpha = 0.3) +
-  scale_fill_KG(name = "Hokkaido_Sky", alpha = 1) +
+  scale_color_kg(name = "Hanamushiro", alpha = 0.3) +
+  scale_fill_kg(name = "Hokkaido_Sky", alpha = 1) +
   theme_dark()
 ```
 
 <img src="man/figures/scale_color_KG.png" width="50%"/>
 
 ## Rtistry and other packages
-This can be done with the get_KG_color() command.
+This can be done with the kg_get_color() command.
 ``` r
 library("aRtsy")
 set.seed(1234)
-canvas_strokes(colors = get_KG_color(name = "Otaru_Unga"),
+canvas_strokes(colors = kg_get_color(name = "Otaru_Unga"),
                neighbors = 1, p = 0.02, iterations = 1,
                resolution = 350)
 ```
