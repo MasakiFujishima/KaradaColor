@@ -1,10 +1,12 @@
 Package: KaradaColor
 Type: Package
-Title: The colour palette of the Japanese landscape is good for the body
-Version: 0.1.4
-Author: Masaki Fujishima
-Maintainer: Masaki Fujishima <info@karada-good.net>
-Description: The colour palette of the Japanese landscape is good for the body.
+Title: Color Palettes Inspired by Japanese Landscape and Cultuer
+Description: The palette includes motifs from Japanese landscape and culture.
+    And it provides commands for color manipulation and ggplot2 color scales.
+Version: 0.1.5
+Authors@R:
+    person("Masaki", "Fujishima", role = c("aut", "cre"),
+           email = "info@karada-good.net")
 License: GPL (>= 3)
 Encoding: UTF-8
 Language: en_US

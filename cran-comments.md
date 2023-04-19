@@ -18,5 +18,6 @@ There are currently no downstream dependencies for this package
 
 This is a resubmission. In this version I have:
 
-* Changed MAINTAINER to full name.
-* Changed URL of man/show_KG_palette.Rd to "https://www.karada-good.net/analyticsr/r-770/".
+* DESCRIPTION The Description field has been reviewed and updated.
+* DESCRIPTION Authors@R field used.
+* DESCRIPTION Changed title to titlecase description.
