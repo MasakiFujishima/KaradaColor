@@ -102,7 +102,7 @@ image_add_textAcode <- function(coldata, xlab = NULL, ylab = NULL,
 
     }
 
-    return(kg_show_consol(as.character(coldata)))
+    return(kg_show_console(as.character(coldata)))
 
   }else{
 
@@ -123,7 +123,7 @@ image_add_textAcode <- function(coldata, xlab = NULL, ylab = NULL,
 
     }
 
-    return(kg_show_consol(as.character(coldata)))
+    return(kg_show_console(as.character(coldata)))
 
   }
 }
