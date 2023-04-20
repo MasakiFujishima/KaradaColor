@@ -42,9 +42,9 @@ kg_get_palette <- function(name = "Sapporo_Sta", alpha = 1){
     }
 }
 
-#' Use color scales on ggplot2
+#' Use color scales on 'ggplot2'
 #'
-#' {scale_color_kg} Use color palette on ggplot2 colors.
+#' {scale_color_kg} Use color palette on 'ggplot2' colors.
 #' @importFrom ggplot2 discrete_scale scale_color_gradientn
 #'
 #' @param name color palette name. (default: \code{"Sapporo_Sta"})
@@ -88,9 +88,9 @@ scale_color_kg <- function(name = "Sapporo_Sta", alpha = 1,
 #' @export
 scale_colour_kg <- scale_color_kg
 
-#' Use Color fills on ggplot2
+#' Use Color fills on 'ggplot2'
 #'
-#' \code{scale_fill_kg} Use color palette on ggplot2 fills.
+#' \code{scale_fill_kg} Use color palette on 'ggplot2' fills.
 #' @importFrom ggplot2 discrete_scale scale_fill_gradientn
 #'
 #' @param name color palette name. (default: \code{"Sapporo_Sta"})
@@ -100,7 +100,7 @@ scale_colour_kg <- scale_color_kg
 #' @param discrete Generate a discrete palette.
 #'    (\code{FALSE} - generate continuous palette)
 #'
-#' @return Create a user defined color palette for ggplot2.
+#' @return Create a user defined color palette for 'ggplot2'.
 #' @export scale_fill_kg
 #' @examples
 #' set.seed(1)

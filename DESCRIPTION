@@ -1,8 +1,8 @@
 Package: KaradaColor
 Type: Package
-Title: Color Palettes Inspired by Japanese Landscape and Cultuer
+Title: Color Palettes Inspired by Japanese Landscape and Culture
 Description: The palette includes motifs from Japanese landscape and culture.
-    And it provides commands for color manipulation and ggplot2 color scales.
+    And it provides commands for color manipulation and 'ggplot2' color scales.
 Version: 0.1.5
 Authors@R:
     person("Masaki", "Fujishima", role = c("aut", "cre"),

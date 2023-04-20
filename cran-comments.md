@@ -18,6 +18,8 @@ There are currently no downstream dependencies for this package
 
 This is a resubmission. In this version I have:
 
-* DESCRIPTION The Description field has been reviewed and updated.
-* DESCRIPTION Authors@R field used.
-* DESCRIPTION Changed title to titlecase description.
+* DESCRIPTION Misspelling of the title "Cultuer" corrected to "Culture".
+* The name of the package used is enclosed in single quotes.
+* The return value is described in image_add_textAcode.Rd.
+Thank you very much for your review!
+

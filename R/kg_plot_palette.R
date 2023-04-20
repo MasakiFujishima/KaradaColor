@@ -61,6 +61,8 @@ kg_plot_color <- function(name = "Sapporo_Sta", color = NULL, n = 5, showcode = 
 #' @param ylab x axis label.
 #' @param colornames Color name.
 #' @param showcode Add a color code to the plot.
+#'
+#' @return Display hex color code and color on console.
 #' @export
 image_add_textAcode <- function(coldata, xlab = NULL, ylab = NULL,
                                 colornames = "color", showcode) {
