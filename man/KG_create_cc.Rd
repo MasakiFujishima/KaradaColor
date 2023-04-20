@@ -7,7 +7,7 @@
 kg_create_cc(basecols = c("#ff48ac", "red"), alpha = 1)
 }
 \arguments{
-\item{basecols}{Set basecol color data.}
+\item{basecols}{Set color data.}
 
 \item{alpha}{The alpha transparency. Numbers range from 0-1.
 see argument alpha in \code{\link[grDevices]{rgb}}.}
@@ -19,6 +19,6 @@ Return base and complementary color in a data frame
 \code{kg_create_cc} This function create complementary color.
 }
 \examples{
-kg_show_consol(kg_create_cc())
+kg_show_console(kg_create_cc())
 kg_plot_color(color = kg_create_cc())
 }

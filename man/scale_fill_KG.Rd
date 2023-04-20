@@ -2,7 +2,7 @@
 % Please edit documentation in R/kg_use_palette.R
 \name{scale_fill_kg}
 \alias{scale_fill_kg}
-\title{Use Color fills on ggplot2}
+\title{Use Color fills on 'ggplot2'}
 \usage{
 scale_fill_kg(
   name = "Sapporo_Sta",
@@ -23,10 +23,10 @@ see argument alpha in \code{\link[grDevices]{rgb}}.}
 (\code{FALSE} - generate continuous palette)}
 }
 \value{
-Create a user defined color palette for ggplot2.
+Create a user defined color palette for 'ggplot2'.
 }
 \description{
-\code{scale_fill_kg} Use color palette on ggplot2 fills.
+\code{scale_fill_kg} Use color palette on 'ggplot2' fills.
 }
 \examples{
 set.seed(1)

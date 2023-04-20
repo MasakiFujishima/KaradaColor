@@ -9,11 +9,11 @@ image_add_textAcode(
   xlab = NULL,
   ylab = NULL,
   colornames = "color",
-  showcode
+  showcode = TRUE
 )
 }
 \arguments{
-\item{coldata}{Color data.}
+\item{coldata}{Color data. Only for matrix class.}
 
 \item{xlab}{x axis label.}
 
@@ -23,6 +23,13 @@ image_add_textAcode(
 
 \item{showcode}{Add a color code to the plot.}
 }
+\value{
+Display hex color code and color on console.
+}
 \description{
 \code{image_add_textAcode} This function add to image() command text and color code.
+}
+\examples{
+image_add_textAcode(coldata = t(as.matrix(c("red", "#ff48ac"))),
+                    colornames = "color", showcode = TRUE)
 }

@@ -3,13 +3,13 @@
 #' \code{kg_create_cc} This function create complementary color.
 #' @importFrom grDevices colorRamp rgb
 #'
-#' @param basecols Set basecol color data.
+#' @param basecols Set color data.
 #' @param alpha	The alpha transparency. Numbers range from 0-1.
 #'      see argument alpha in \code{\link[grDevices]{rgb}}.
 #' @return Return base and complementary color in a data frame
 #' @export
 #' @examples
-#' kg_show_consol(kg_create_cc())
+#' kg_show_console(kg_create_cc())
 #' kg_plot_color(color = kg_create_cc())
 kg_create_cc <- function(basecols = c("#ff48ac", "red"), alpha = 1){
 
@@ -42,7 +42,7 @@ kg_create_cc <- function(basecols = c("#ff48ac", "red"), alpha = 1){
 #' @return Return triad color in a data frame
 #' @export
 #' @examples
-#' kg_show_consol(kg_create_tc())
+#' kg_show_console(kg_create_tc())
 #' kg_plot_color(color = kg_create_tc())
 kg_create_tc <- function(basecols = "#4E5C78", alpha = 1){
 

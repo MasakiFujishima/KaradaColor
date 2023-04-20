@@ -1,6 +1,6 @@
-#' Display the color palette data set in the consol
+#' Display the color palette data set in the console
 #'
-#' \code{kg_show_consol} This function draws display the color palette data set
+#' \code{kg_show_console} This function draws display the color palette data set
 #'     in the console.
 #' @importFrom crayon make_style combine_styles
 #' @param x color palette data.
@@ -8,8 +8,8 @@
 #' @return Vector containing a hex color code representation for the chosen palette
 #' @export
 #' @examples
-#' kg_show_consol()
-kg_show_consol <- function(x = df_KG_palettes) {
+#' kg_show_console()
+kg_show_console <- function(x = df_KG_palettes) {
 
   if(inherits(x, "list")){
 
@@ -20,6 +20,7 @@ kg_show_consol <- function(x = df_KG_palettes) {
       cols <- sapply(pal_col, console_col)
       cat(paste0("Name:", pal_name,"\n",
                  paste0(cols, collapse = " "), "\n"))
+
     }
   }
 
@@ -56,7 +57,7 @@ kg_show_consol <- function(x = df_KG_palettes) {
   }
 }
 
-#' @rdname kg_show_consol
+#' @rdname kg_show_console
 #' @export
 console_col <- function(x) {
   text <- crayon::make_style("black", bg = FALSE)

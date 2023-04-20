@@ -85,7 +85,7 @@ ggplot(data = diamonds, aes(x = cut, y = price,
 
 <img src="man/figures/scale_color_KG.png" width="50%"/>
 
-## Rtistry and other packages
+## aRtsy and other packages
 This can be done with the kg_get_color() command.
 ``` r
 library("aRtsy")

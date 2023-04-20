@@ -19,6 +19,6 @@ Return triad color in a data frame
 \code{kg_create_tc} This function create triad color.
 }
 \examples{
-kg_show_consol(kg_create_tc())
+kg_show_console(kg_create_tc())
 kg_plot_color(color = kg_create_tc())
 }

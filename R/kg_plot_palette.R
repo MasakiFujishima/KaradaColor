@@ -43,7 +43,7 @@ kg_plot_color <- function(name = "Sapporo_Sta", color = NULL, n = 5, showcode = 
   }
 
   cxlist <- convert_colTodf(coldata)
-  #print(cxlist)
+
   image_add_textAcode(cxlist$coldata, cxlist$xlab, cxlist$ylab,
                       cxlist$get_colpalnames, showcode = TRUE)
 
@@ -56,7 +56,7 @@ kg_plot_color <- function(name = "Sapporo_Sta", color = NULL, n = 5, showcode = 
 #' @importFrom graphics image rect text axis
 #' @importFrom stats setNames
 #'
-#' @param coldata Color data.
+#' @param coldata Color data. Only for matrix class.
 #' @param xlab x axis label.
 #' @param ylab x axis label.
 #' @param colornames Color name.
@@ -64,8 +64,11 @@ kg_plot_color <- function(name = "Sapporo_Sta", color = NULL, n = 5, showcode = 
 #'
 #' @return Display hex color code and color on console.
 #' @export
+#' @examples
+#' image_add_textAcode(coldata = t(as.matrix(c("red", "#ff48ac"))),
+#'                     colornames = "color", showcode = TRUE)
 image_add_textAcode <- function(coldata, xlab = NULL, ylab = NULL,
-                                colornames = "color", showcode) {
+                                colornames = "color", showcode = TRUE) {
 
 
   image(x = seq_len(ncol(coldata)), y = seq_len(nrow(coldata)),

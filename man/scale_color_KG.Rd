@@ -3,7 +3,7 @@
 \name{scale_color_kg}
 \alias{scale_color_kg}
 \alias{scale_colour_kg}
-\title{Use color scales on ggplot2}
+\title{Use color scales on 'ggplot2'}
 \usage{
 scale_color_kg(
   name = "Sapporo_Sta",
@@ -34,7 +34,7 @@ continuous palette)}
 Create a user defined color palette for ggplot2.
 }
 \description{
-{scale_color_kg} Use color palette on ggplot2 colors.
+{scale_color_kg} Use color palette on 'ggplot2' colors.
 }
 \examples{
 library("ggplot2")
