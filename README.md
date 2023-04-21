@@ -33,7 +33,7 @@ kg_show_console()
 
 ``` r
 #Plot the palette
-kg_plot_color("Kyoto_City", n = 10, showcode = TRUE)
+kg_plot_color("Kyoto_City", n = 5, showcode = TRUE)
 ```
 
 <img src="man/figures/Plot_KG_Palette.png" width="50%"/>
