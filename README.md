@@ -2,8 +2,8 @@
 
 <!-- badges: start -->
 [![cran version](https://www.r-pkg.org/badges/version/KaradaColor?color=orange)](https://cran.r-project.org/package=KaradaColor)
-[![rstudio mirror per-month downloads](http://cranlogs.r-pkg.org/badges/last-month/KaradaColor?color=yellow)](https://github.com/metacran/cranlogs.app)
-[![rstudio mirror total downloads](http://cranlogs.r-pkg.org/badges/grand-total/KaradaColor?color=blue)](https://github.com/metacran/cranlogs.app)
+[![rstudio mirror per-month downloads](http://cranlogs.r-pkg.org/badges/last-month/KaradaColor?color=yellow)](https://cran.r-project.org/package=KaradaColor)
+[![rstudio mirror total downloads](http://cranlogs.r-pkg.org/badges/grand-total/KaradaColor?color=blue)](https://cran.r-project.org/package=KaradaColor)
 <!-- badges: end -->
 
 Color palette of "[KARADA-GOOD](https://www.karada-good.net/)". The color palette consists of five colors selected from photographs of Japanese landscapes and foods. Color palette will be added sequentially.
