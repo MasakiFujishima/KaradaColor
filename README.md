@@ -1,7 +1,9 @@
 # KaradaColor
 
 <!-- badges: start -->
-
+[![](https://www.r-pkg.org/badges/version/badger?color=orange)](https://cran.r-project.org/package=badger)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/KaradaColor?color=blue)](https://cran.r-project.org/package=KaradaColor)
+[![CRAN checks](https://badges.cranchecks.info/summary/badger.svg)](https://cran.r-project.org/web/checks/check_results_badger.html)
 <!-- badges: end -->
 
 Color palette of "[KARADA-GOOD](https://www.karada-good.net/)". The color palette consists of five colors selected from photographs of Japanese landscapes and foods. Color palette will be added sequentially.
