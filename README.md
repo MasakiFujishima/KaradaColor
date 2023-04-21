@@ -26,7 +26,7 @@ devtools::install_github("KaradaGood/KaradaColor")
 ``` r
 library(KaradaColor)
 #Display all palettes in console
-kg_show_consol()
+kg_show_console()
 ```
 
 <img src="man/figures/Show_KG_Palette.png" width="50%"/>
