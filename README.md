@@ -1,8 +1,8 @@
 # KaradaColor
 
 <!-- badges: start -->
-[![CRAN checks](https://badges.cranchecks.info/summary/KaradaColor.svg)](https://cran.r-project.org/web/checks/check_results_KaradaColor.html)
-[![CRAN checks](https://badges.cranchecks.info/summary/KaradaColor.svg)](https://cran.r-project.org/web/checks/check_results_KaradaColor.html)
+[![](http://cranlogs.r-pkg.org/badges/grand-total/KaradaColor?color=blue)](https://cran.r-project.org/package=KaradaColor)
+[![](https://www.r-pkg.org/badges/version/KaradaColor?color=orange)](https://cran.r-project.org/package=KaradaColor)
 [![CRAN checks](https://badges.cranchecks.info/summary/KaradaColor.svg)](https://cran.r-project.org/web/checks/check_results_KaradaColor.html)
 <!-- badges: end -->
 
