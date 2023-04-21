@@ -39,14 +39,14 @@ kg_plot_color("Kyoto_City", n = 10, showcode = TRUE)
 <img src="man/figures/Plot_KG_Palette.png" width="50%"/>
 
 ``` r
-#Create complementary color
+#Create complementary color: kg_create_cc() command
 kg_plot_color(color = kg_create_cc())
 ```
 
 <img src="man/figures/kg_create_cc.png" width="50%"/>
 
 ``` r
-#Create triad color
+#Create triad color: kg_create_tc() command
 kg_plot_color(color = kg_create_tc())
 ```
 
