@@ -3,7 +3,6 @@
 <!-- badges: start -->
 [![](http://cranlogs.r-pkg.org/badges/grand-total/KaradaColor?color=blue)](https://cran.r-project.org/package=KaradaColor)
 [![](https://www.r-pkg.org/badges/version/KaradaColor?color=orange)](https://cran.r-project.org/package=KaradaColor)
-[![CRAN checks](https://badges.cranchecks.info/summary/KaradaColor.svg)](https://cran.r-project.org/web/checks/check_results_KaradaColor.html)
 <!-- badges: end -->
 
 Color palette of "[KARADA-GOOD](https://www.karada-good.net/)". The color palette consists of five colors selected from photographs of Japanese landscapes and foods. Color palette will be added sequentially.
@@ -15,6 +14,12 @@ Color palettes to be added are introduced on [Instagrame](https://www.instagram.
 
 You can install the development version of KaradaColor from [GitHub](https://github.com/) with:
 
+
+Get the released version from CRAN:
+``` r
+install.packages("KaradaColor")
+```
+Or the development version from github:
 ``` r
 # install.packages("devtools")
 devtools::install_github("KaradaGood/KaradaColor")
