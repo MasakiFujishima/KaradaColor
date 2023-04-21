@@ -38,8 +38,8 @@ Create a user defined color palette for ggplot2.
 }
 \examples{
 library("ggplot2")
-ggplot(data = diamonds, aes(x = cut, y = price,
-                            color = cut, fill = cut)) +
+ggplot(data = diamonds, aes(x = color, y = price,
+                            color = color, fill = color)) +
   geom_boxplot() +
   scale_color_kg(name = "Hanamushiro", alpha = 0.2) +
   scale_fill_kg(name = "Hokkaido_Sky", alpha = 0.2) +

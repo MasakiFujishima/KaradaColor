@@ -4,14 +4,12 @@
 \alias{kg_plot_color}
 \title{Draw the color data}
 \usage{
-kg_plot_color(name = "Sapporo_Sta", color = NULL, n = 5, showcode = TRUE)
+kg_plot_color(name = "Sapporo_Sta", color = NULL, showcode = TRUE)
 }
 \arguments{
 \item{name}{Color palette color palette name. (default: \code{"Sapporo_Sta"})}
 
 \item{color}{Color data. Precedence over name except NULL. (default: NULL)}
-
-\item{n}{Number of colors to create.}
 
 \item{showcode}{Add a color code to the plot.}
 }
@@ -24,7 +22,7 @@ palette
 }
 \examples{
 #Draw the color palette of the KaradaColor
-kg_plot_color(name = "Amanohashidate", n = 5, showcode = FALSE)
+kg_plot_color(name = "Amanohashidate", showcode = FALSE)
 #Draw the KG_create_cc command
 kg_plot_color(color = kg_create_cc(c("#ff48ac", "yellow")), showcode = TRUE)
 #Draw the KG_create_tc command
