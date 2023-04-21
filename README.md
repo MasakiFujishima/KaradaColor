@@ -11,10 +11,6 @@ Color palettes to be added are introduced on [Instagrame](https://www.instagram.
 
 
 ## Installation
-
-You can install the development version of KaradaColor from [GitHub](https://github.com/) with:
-
-
 Get the released version from CRAN:
 ``` r
 install.packages("KaradaColor")
