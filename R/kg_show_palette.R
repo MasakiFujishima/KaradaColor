@@ -64,4 +64,3 @@ console_col <- function(x) {
   backcol <- crayon::make_style(x, bg = TRUE, grey = FALSE)
   return(crayon::combine_styles(text, backcol)(x))
 }
-

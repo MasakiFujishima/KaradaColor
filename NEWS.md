@@ -1,4 +1,8 @@
+# KaradaColor 0.1.6
+Add:kg_create_mc() command. This function create monochromatic color.
+
 # KaradaColor 0.1.5
+Release to CRAN
 Change:Rename some commands to kg_xxx_xxx before allowing CRAN release.
 
 # KaradaColor 0.1.4
