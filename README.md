@@ -59,6 +59,7 @@ kg_plot_color(color = kg_create_mc(basecols = "#d0af4c"))
 ```
 <img src="man/figures/kg_create_mc.png" width="50%"/>
 
+
 ## ggplot2
 The package contains colour scale functions for `scale_color_kg()` and `scale_fill_kg()`. 
 Missing values are initially displayed in red.
