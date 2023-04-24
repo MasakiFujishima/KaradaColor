@@ -7,7 +7,7 @@
 kg_create_cc(basecols = c("#ff48ac", "red"), alpha = 1)
 }
 \arguments{
-\item{basecols}{Set color data.}
+\item{basecols}{Color data.}
 
 \item{alpha}{The alpha transparency. Numbers range from 0-1.
 see argument alpha in \code{\link[grDevices]{rgb}}.}

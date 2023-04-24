@@ -7,7 +7,7 @@
 kg_create_tc(basecols = "#4E5C78", alpha = 1)
 }
 \arguments{
-\item{basecols}{Set basecol color data.}
+\item{basecols}{Color data.}
 
 \item{alpha}{The alpha transparency. Numbers range from 0-1.
 see argument alpha in \code{\link[grDevices]{rgb}}.}

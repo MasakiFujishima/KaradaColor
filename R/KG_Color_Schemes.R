@@ -3,7 +3,7 @@
 #' \code{kg_create_cc} This function create complementary color.
 #' @importFrom grDevices colorRamp rgb
 #'
-#' @param basecols Set color data.
+#' @param basecols Color data.
 #' @param alpha	The alpha transparency. Numbers range from 0-1.
 #'      see argument alpha in \code{\link[grDevices]{rgb}}.
 #' @return Return base and complementary color in a data frame
@@ -35,7 +35,7 @@ kg_create_cc <- function(basecols = c("#ff48ac", "red"), alpha = 1){
 #' \code{kg_create_tc} This function create triad color.
 #' @importFrom grDevices colorRamp rgb
 #'
-#' @param basecols Set basecol color data.
+#' @param basecols Color data.
 #' @param alpha	The alpha transparency. Numbers range from 0-1.
 #'      see argument alpha in \code{\link[grDevices]{rgb}}.
 #'
@@ -63,16 +63,17 @@ kg_create_tc <- function(basecols = "#4E5C78", alpha = 1){
 #' \code{kg_create_mc} This function create monochromatic color.
 #' @importFrom grDevices colorRamp rgb
 #'
-#' @param basecols Set basecol color data.
-#' @param n Number of colors to create.
+#' @param basecols Color data.
+#' @param n Create n colors of low and high saturation
+#'      with Color data in the center.
 #' @param alpha	The alpha transparency. Numbers range from 0-1.
 #'      see argument alpha in \code{\link[grDevices]{rgb}}.#'
 #'
 #' @return Return monochromatic color in a data frame
 #' @export
 #' @examples
-#' kg_show_console(kg_create_mc)
-#' kg_plot_color(color = kg_create_mc())
+#' kg_show_console(kg_create_mc())
+#' kg_plot_color(color = kg_create_mc(basecols = "#d0af4c"))
 kg_create_mc <- function(basecols = "#7F36EF", n = 2, alpha = 1){
 
   get_RGB <- grDevices::colorRamp(color = basecols, space = "Lab", interpolate = "spline")

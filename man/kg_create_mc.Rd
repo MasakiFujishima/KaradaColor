@@ -10,9 +10,10 @@ kg_create_mc(basecols = "#7F36EF", n = 2, alpha = 1)
 range_RGB(basecols = NULL, n = NULL)
 }
 \arguments{
-\item{basecols}{Set basecol color data.}
+\item{basecols}{Color data.}
 
-\item{n}{Number of colors to create.}
+\item{n}{Create n colors of low and high saturation
+with Color data in the center.}
 
 \item{alpha}{The alpha transparency. Numbers range from 0-1.
 see argument alpha in \code{\link[grDevices]{rgb}}.#'}
@@ -24,6 +25,6 @@ Return monochromatic color in a data frame
 \code{kg_create_mc} This function create monochromatic color.
 }
 \examples{
-kg_show_console(kg_create_mc)
-kg_plot_color(color = kg_create_mc())
+kg_show_console(kg_create_mc())
+kg_plot_color(color = kg_create_mc(basecols = "#d0af4c"))
 }
