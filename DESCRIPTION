@@ -25,5 +25,5 @@ Suggests:
     aRtsy,
     testthat (>= 3.0.0),
     vdiffr
-URL: https://github.com/KaradaGood/KaradaColor
+URL: https://github.com/MasakiFujishima/KaradaColor
 Config/testthat/edition: 3
